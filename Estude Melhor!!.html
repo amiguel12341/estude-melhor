@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Estude Melhor | Guia Prático para ENEM e Faculdade</title>
+
+    <meta name="description" content="Aprenda a organizar seus estudos para o ENEM, vestibulares e faculdade com métodos simples, cronograma de 30 dias, checklist e Caderno de Erros.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7f9fc;
+            color: #172033;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* HEADER */
+
+        header {
+            background: #ffffff;
+            padding: 18px 0;
+            border-bottom: 1px solid #e8ecf2;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: #2563eb;
+        }
+
+        .nav-btn {
+            background: #2563eb;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        /* HERO */
+
+        .hero {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #eef5ff, #ffffff);
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #dbeafe;
+            color: #1d4ed8;
+            padding: 7px 14px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 52px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        h1 span {
+            color: #2563eb;
+        }
+
+        .hero p {
+            font-size: 19px;
+            color: #536174;
+            margin-bottom: 30px;
+        }
+
+        .main-btn {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 17px 32px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.25);
+            transition: 0.2s;
+        }
+
+        .main-btn:hover {
+            transform: translateY(-2px);
+            background: #1d4ed8;
+        }
+
+        .small-text {
+            display: block;
+            margin-top: 12px;
+            font-size: 13px;
+            color: #718096;
+        }
+
+        /* BOOK */
+
+        .book {
+            background: #172554;
+            color: white;
+            border-radius: 18px;
+            padding: 45px 35px;
+            min-height: 430px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(15, 23, 42, 0.2);
+            transform: rotate(1deg);
+        }
+
+        .book-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+
+        .book h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .book p {
+            color: #dbeafe;
+            font-size: 16px;
+        }
+
+        /* SECTIONS */
+
+        section {
+            padding: 75px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        .section-title p {
+            color: #687386;
+            max-width: 650px;
+            margin: auto;
+        }
+
+        /* PROBLEMS */
+
+        .problems {
+            background: white;
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .problem {
+            padding: 28px;
+            background: #f8fafc;
+            border-radius: 14px;
+            border: 1px solid #e7ebf0;
+        }
+
+        .problem-icon {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .problem h3 {
+            margin-bottom: 8px;
+        }
+
+        .problem p {
+            color: #657184;
+        }
+
+        /* BENEFITS */
+
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .benefit {
+            background: white;
+            padding: 22px;
+            border-radius: 12px;
+            border: 1px solid #e7ebf0;
+        }
+
+        .benefit strong {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        .check {
+            color: #16a34a;
+            margin-right: 8px;
+        }
+
+        /* CONTENT */
+
+        .content-box {
+            background: white;
+            border-radius: 18px;
+            padding: 35px;
+            border: 1px solid #e7ebf0;
+        }
+
+        .chapter {
+            display: flex;
+            gap: 15px;
+            padding: 15px 0;
+            border-bottom: 1px solid #edf0f4;
+        }
+
+        .chapter:last-child {
+            border-bottom: none;
+        }
+
+        .number {
+            background: #dbeafe;
+            color: #2563eb;
+            width: 35px;
+            height: 35px;
+            min-width: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        /* BONUS */
+
+        .bonus-section {
+            background: #172554;
+            color: white;
+        }
+
+        .bonus-section .section-title p {
+            color: #bfdbfe;
+        }
+
+        .bonus-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .bonus {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .bonus-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .bonus p {
+            color: #dbeafe;
+        }
+
+        /* PRICE */
+
+        .price-section {
+            background: white;
+        }
+
+        .price-card {
+            max-width: 520px;
+            margin: auto;
+            text-align: center;
+            background: #f8fafc;
+            border: 2px solid #2563eb;
+            border-radius: 20px;
+            padding: 45px 30px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+        }
+
+        .price-label {
+            color: #64748b;
+            font-size: 15px;
+        }
+
+        .price {
+            font-size: 54px;
+            font-weight: 800;
+            color: #2563eb;
+            margin: 10px 0;
+        }
+
+        .price-card ul {
+            list-style: none;
+            text-align: left;
+            margin: 25px 0;
+        }
+
+        .price-card li {
+            margin: 12px 0;
+        }
+
+        /* FAQ */
+
+        .faq {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        details {
+            background: white;
+            margin-bottom: 12px;
+            border: 1px solid #e5e9ef;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        details p {
+            color: #657184;
+            margin-top: 12px;
+        }
+
+        /* FINAL CTA */
+
+        .final {
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .final h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .final p {
+            max-width: 650px;
+            margin: 0 auto 30px;
+            color: #dbeafe;
+        }
+
+        .final .main-btn {
+            background: white;
+            color: #1d4ed8;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 800px) {
+
+            .hero-content {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            .problem-grid,
+            .bonus-grid,
+            .benefits {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 55px 0;
+            }
+
+            section {
+                padding: 55px 0;
+            }
+
+            .nav-btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container nav">
+        <div class="logo">Estude Melhor</div>
+
+        <a href="#comprar" class="nav-btn">
+            Quero meu e-book
+        </a>
+    </div>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="container hero-content">
+
+        <div>
+
+            <span class="tag">
+                📚 GUIA PRÁTICO DE ESTUDOS
+            </span>
+
+            <h1>
+                Estude melhor para o
+                <span>ENEM e faculdade</span>
+            </h1>
+
+            <p>
+                Aprenda a organizar sua rotina, estudar com mais foco,
+                revisar conteúdos e aproveitar melhor seu tempo.
+            </p>
+
+            <a href="#comprar" class="main-btn">
+                QUERO COMEÇAR AGORA →
+            </a>
+
+            <span class="small-text">
+                Acesso digital • PDF • Estude no celular ou computador
+            </span>
+
+        </div>
+
+
+        <div class="book">
+
+            <div class="book-icon">📘</div>
+
+            <h2>ESTUDE MELHOR</h2>
+
+            <p>
+                O Guia Prático para ENEM,
+                Vestibulares e Faculdade
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROBLEMA -->
+
+<section class="problems">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Você se identifica com isso?</h2>
+
+            <p>
+                Estudar pode ficar muito mais difícil quando você não sabe
+                exatamente como organizar sua rotina.
+            </p>
+
+        </div>
+
+
+        <div class="problem-grid">
+
+            <div class="problem">
+
+                <div class="problem-icon">😵</div>
+
+                <h3>Não sabe por onde começar</h3>
+
+                <p>
+                    Você tem muitos conteúdos para estudar e não sabe
+                    como organizar tudo.
+                </p>
+
+            </div>
+
+
+            <div class="problem">
+
+                <div class="problem-icon">📱</div>
+
+                <h3>Perde a concentração</h3>
+
+                <p>
+                    O celular e outras distrações acabam tomando
+                    boa parte do seu tempo.
+                </p>
+
+            </div>
+
+
+            <div class="problem">
+
+                <div class="problem-icon">⏰</div>
+
+                <h3>Deixa tudo para depois</h3>
+
+                <p>
+                    Você sabe que precisa estudar, mas acaba
+                    procrastinando.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- BENEFÍCIOS -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>O que você vai aprender</h2>
+
+            <p>
+                Um método simples para transformar seus estudos
+                em uma rotina mais organizada.
+            </p>
+
+        </div>
+
+
+        <div class="benefits">
+
+            <div class="benefit">
+                <strong>
+                    <span class="check">✓</span>
+                    Organizar sua rotina
+                </strong>
+                Aprenda a montar um cronograma adaptado ao seu tempo.
+            </div>
+
+            <div class="benefit">
+                <strong>
+                    <span class="check">✓</span>
+                    Estudar por blocos
+                </strong>
+                Divida seus estudos em períodos mais fáceis de administrar.
+            </div>
+
+            <div class="benefit">
+                <strong>
+                    <span class="check">✓</span>
+                    Fazer melhores resumos
+                </strong>
+                Aprenda a destacar apenas as informações realmente importantes.
+            </div>
+
+            <div class="benefit">
+                <strong>
+                    <span class="check">✓</span>
+                    Usar questões
+                </strong>
+                Transforme os exercícios em uma ferramenta de aprendizado.
+            </div>
+
+            <div class="benefit">
+                <strong>
+                    <span class="check">✓</span>
+                    Revisar melhor
+                </strong>
+                Crie uma rotina de revisões para acompanhar seu aprendizado.
+            </div>
+
+            <div class="benefit">
+                <strong>
+                    <span class="check">✓</span>
+                    Preparar redações
+                </strong>
+                Organize seus estudos para praticar a escrita.
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTEÚDO -->
+
+<section style="background:#f1f5f9;">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>O que está dentro do e-book?</h2>
+
+            <p>
+                Mais de 20 capítulos com estratégias práticas
+                para melhorar sua rotina de estudos.
+            </p>
+
+        </div>
+
+
+        <div class="content-box">
+
+            <div class="chapter">
+                <div class="number">1</div>
+                <div>
+                    <strong>Como começar a estudar</strong><br>
+                    Descubra como identificar suas dificuldades.
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="number">2</div>
+                <div>
+                    <strong>Como montar um plano de estudos</strong><br>
+                    Organize suas matérias durante a semana.
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="number">3</div>
+                <div>
+                    <strong>Estudo por blocos</strong><br>
+                    Aprenda a organizar períodos de concentração.
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="number">4</div>
+                <div>
+                    <strong>Como estudar matérias novas</strong><br>
+                    Entenda, pratique, corrija e revise.
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="number">5</div>
+                <div>
+                    <strong>Como fazer resumos</strong><br>
+                    Aprenda a resumir sem copiar páginas inteiras.
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="number">6</div>
+                <div>
+                    <strong>Mapas mentais</strong><br>
+                    Organize informações de maneira visual.
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="number">7</div>
+                <div>
+                    <strong>Questões e exercícios</strong><br>
+                    Use os erros para descobrir o que precisa melhorar.
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="number">8</div>
+                <div>
+                    <strong>Caderno de Erros</strong><br>
+                    Registre e revise seus principais erros.
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="number">9</div>
+                <div>
+                    <strong>Revisão inteligente</strong><br>
+                    Aprenda diferentes maneiras de revisar.
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="number">10</div>
+                <div>
+                    <strong>Como estudar Matemática</strong><br>
+                    Teoria, exemplos e prática.
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="number">11</div>
+                <div>
+                    <strong>Como estudar Português</strong><br>
+                    Interpretação, gramática e linguagem.
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="number">12</div>
+                <div>
+                    <strong>Ciências Humanas</strong><br>
+                    História e Geografia de forma organizada.
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="number">13</div>
+                <div>
+                    <strong>Ciências da Natureza</strong><br>
+                    Biologia, Química e Física.
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="number">14</div>
+                <div>
+                    <strong>Como preparar a redação</strong><br>
+                    Organize sua prática de escrita.
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="number">15</div>
+                <div>
+                    <strong>Provas anteriores</strong><br>
+                    Aprenda a estudar usando questões antigas.
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="number">16</div>
+                <div>
+                    <strong>Simulados</strong><br>
+                    Treine conhecimento e administração do tempo.
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="number">17</div>
+                <div>
+                    <strong>Como evitar a procrastinação</strong><br>
+                    Torne mais fácil começar.
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="number">18</div>
+                <div>
+                    <strong>Celular e estudos</strong><br>
+                    Aprenda a diminuir as distrações.
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="number">19</div>
+                <div>
+                    <strong>Sono, descanso e rotina</strong><br>
+                    Encontre uma rotina mais equilibrada.
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="number">20</div>
+                <div>
+                    <strong>Como montar sua rotina</strong><br>
+                    Veja um exemplo de organização diária.
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="number">21</div>
+                <div>
+                    <strong>Plano de 30 dias</strong><br>
+                    Um roteiro para começar.
+                </div>
+            </div>
+
+            <div class="chapter">
+                <div class="number">22</div>
+                <div>
+                    <strong>Como acompanhar sua evolução</strong><br>
+                    Descubra o que realmente importa.
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- BÔNUS -->
+
+<section class="bonus-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Bônus para facilitar seus estudos</h2>
+
+            <p>
+                Além do e-book, você terá materiais práticos
+                para colocar as estratégias em prática.
+            </p>
+
+        </div>
+
+
+        <div class="bonus-grid">
+
+            <div class="bonus">
+
+                <div class="bonus-icon">📅</div>
+
+                <h3>Planner de Estudos</h3>
+
+                <p>
+                    Organize suas matérias e seus horários
+                    de estudo.
+                </p>
+
+            </div>
+
+
+            <div class="bonus">
+
+                <div class="bonus-icon">📝</div>
+
+                <h3>Caderno de Erros</h3>
+
+                <p>
+                    Registre seus erros e acompanhe
+                    os conteúdos que precisam de atenção.
+                </p>
+
+            </div>
+
+
+            <div class="bonus">
+
+                <div class="bonus-icon">✅</div>
+
+                <h3>Checklist</h3>
+
+                <p>
+                    Confira o que fazer antes, durante
+                    e depois dos estudos.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PREÇO -->
+
+<section class="price-section" id="comprar">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Comece sua preparação</h2>
+
+            <p>
+                Tenha acesso ao material completo e comece
+                a organizar seus estudos.
+            </p>
+
+        </div>
+
+
+        <div class="price-card">
+
+            <div class="price-label">
+                ACESSO DIGITAL
+            </div>
+
+            <div class="price">
+                R$ 19,90
+            </div>
+
+            <p>
+                Pagamento único
+            </p>
+
+
+            <ul>
+
+                <li>✓ E-book completo em PDF</li>
+
+                <li>✓ Métodos de estudo</li>
+
+                <li>✓ Plano de estudos de 30 dias</li>
+
+                <li>✓ Planner de Estudos</li>
+
+                <li>✓ Caderno de Erros</li>
+
+                <li>✓ Checklist</li>
+
+            </ul>
+
+
+            <!--
+            IMPORTANTE:
+            SUBSTITUA O LINK ABAIXO PELO SEU LINK
+            DE CHECKOUT DA KIWIFY.
+            -->
+
+            <a
+                href="COLE-AQUI-SEU-LINK-DA-KIWIFY"
+                class="main-btn"
+                target="_blank"
+            >
+                QUERO MEU E-BOOK →
+            </a>
+
+            <span class="small-text">
+                Você será direcionado para a página segura de pagamento.
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Perguntas frequentes</h2>
+
+        </div>
+
+
+        <div class="faq">
+
+            <details>
+
+                <summary>
+                    Como vou receber o e-book?
+                </summary>
+
+                <p>
+                    Após a confirmação da compra, o material será
+                    disponibilizado digitalmente conforme a configuração
+                    de entrega do produto.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Preciso estudar várias horas por dia?
+                </summary>
+
+                <p>
+                    Não. O objetivo do material é ajudar você a organizar
+                    melhor o tempo que já possui.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    O material serve para o ENEM?
+                </summary>
+
+                <p>
+                    Sim. O conteúdo foi pensado para ajudar na organização
+                    dos estudos para ENEM, vestibulares e faculdade.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Posso estudar pelo celular?
+                </summary>
+
+                <p>
+                    Sim. O material é digital e pode ser acessado
+                    pelo dispositivo compatível com o formato disponibilizado.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    O e-book garante aprovação?
+                </summary>
+
+                <p>
+                    Não. O material é educativo e oferece estratégias
+                    de organização e estudo. Os resultados dependem de
+                    diversos fatores, incluindo dedicação, preparação
+                    e desempenho individual.
+                </p>
+
+            </details>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA FINAL -->
+
+<section class="final">
+
+    <div class="container">
+
+        <h2>
+            Está pronto para organizar seus estudos?
+        </h2>
+
+        <p>
+            Comece com um método simples, organize sua rotina
+            e transforme seus estudos em um hábito.
+        </p>
+
+        <a
+            href="COLE-AQUI-SEU-LINK-DA-KIWIFY"
+            class="main-btn"
+            target="_blank"
+        >
+            QUERO COMEÇAR AGORA →
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            © 2026 Estude Melhor — Todos os direitos reservados.
+        </p>
+
+        <p style="margin-top:8px;">
+            Material educativo. Não há garantia de aprovação em
+            exames ou processos seletivos.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
